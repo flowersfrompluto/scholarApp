@@ -1,0 +1,738 @@
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gainsboro;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.welcome {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.form {
+    width: 95%;
+    margin: auto;
+}
+
+.form p {
+    font-weight: 600;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+/* DIV */
+.img {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.img img {
+    object-fit: contain;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+
+.txt1 h3 {
+    text-align: center;
+    width: auto;
+    font-size: 25px
+}
+
+.txt2 p,
+.txt3 p {
+    text-align: left;
+    margin: auto;
+}
+
+.row0 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row3 {
+    width: 60%;
+}
+
+.sub1,
+.sub2,
+.sub3,
+.sub4,
+.sub5,
+.sub6,
+.sub7,
+.sub8 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+}
+
+.tc {
+    background-color: rgb(151, 151, 151);
+    width: 100%;
+    padding: 20px;
+}
+
+.tc p {
+    font-size: 13px;
+    background-color: rgb(151, 151, 151);
+}
+
+/* LABEL TAGS */
+#subjectTxt,
+#first,
+#last,
+#middle,
+#dobTxt,
+#nationalityTxt,
+#emailTxt,
+#addressTxt,
+#phoneTxt,
+#genderTxt {
+    font-size: 15px;
+    /* color: #036ca0; */
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#messageTxt {
+    color: #39687e;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* INPUT TAGS */
+#firstName,
+#middleName,
+#lastName,
+#phoneNumber,
+#email,
+#homeAddress,
+#gender,
+#country,
+#dob,
+#score1,
+#score2,
+#score3,
+#score4,
+#score5,
+#score6,
+#score7,
+#score8,
+#subject1,
+#subject2,
+#subject3,
+#subject4,
+#subject5,
+#subject6,
+#subject7,
+#subject8 {
+    padding: 5px 25px 5px 25px;
+    text-align: left;
+    font-size: 20px;
+    border: 1px solid gainsboro;
+    background-color: rgb(151, 151, 151);
+}
+
+
+/* ERROR TAGS */
+#firstError,
+#lastError,
+#subject1Error,
+#score1Error,
+#subject2Error,
+#score2Error,
+#subject3Error,
+#score3Error,
+#subject4Error,
+#score4Error,
+#subject5Error,
+#score5Error,
+#subject6Error,
+#score6Error,
+#subject7Error,
+#score7Error,
+#subject8Error,
+#score8Error,
+#genderError,
+#nationalityError,
+#dobError,
+#phoneError,
+#emailError,
+#addressError,
+#termsError {
+    color: red;
+    font-size: 12px;
+    text-align: right;
+}
+
+
+#btn {
+    padding: 5px 20px;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    border: 1px solid rgb(145, 255, 0);
+    color: black;
+}
+
+
+
+/* MEDIA QUERY */
+
+
+@media (max-width: 1024px) {
+
+    .txt1 h3 {
+        text-align: center;
+        width: auto;
+    }
+
+    .txt2 p,
+    .txt3 p {
+        text-align: left;
+        margin: auto;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 8px;
+        width: 85%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 18px;
+        width: 85%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row3 {
+        width: 65%;
+    }
+
+    .sub1,
+    .sub2,
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6,
+    .sub7,
+    .sub8 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 50px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #verify {
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        background-color: greenyellow;
+        border: greenyellow;
+    }
+
+    #messageTxt {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .txt1 h3 {
+        text-align: center;
+        width: auto;
+        font-size: 20px
+    }
+
+    .txt2 p,
+    .txt3 p {
+        text-align: left;
+        margin: auto;
+        width: 100%;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 18px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row3 {
+        width: 60%;
+    }
+
+    .sub1,
+    .sub2,
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6,
+    .sub7,
+    .sub8 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 50px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #firstName,
+    #middleName,
+    #lastName,
+    #phoneNumber,
+    #email,
+    #homeAddress,
+    #gender,
+    #country,
+    #dob,
+    #score1,
+    #score2,
+    #score3,
+    #score4,
+    #score5,
+    #score6,
+    #score7,
+    #score8,
+    #subject1,
+    #subject2,
+    #subject3,
+    #subject4,
+    #subject5,
+    #subject6,
+    #subject7,
+    #subject8 {
+        padding: 3px 0px 3px 5px;
+        text-align: left;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #b2dbee;
+        border: 1px solid rgb(0, 44, 94);
+    }
+
+    #verify {
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        background-color: greenyellow;
+        border: greenyellow;
+    }
+
+    #messageTxt {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .img {
+        width: 50%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .txt1 h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .txt2 p,
+    .txt3 p {
+        text-align: left;
+        margin: auto;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 18px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row3 {
+        width: 60%;
+    }
+
+    .sub1,
+    .sub2,
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6,
+    .sub7,
+    .sub8 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #firstName,
+    #middleName,
+    #lastName,
+    #phoneNumber,
+    #email,
+    #homeAddress,
+    #gender,
+    #country,
+    #dob,
+    #score1,
+    #score2,
+    #score3,
+    #score4,
+    #score5,
+    #score6,
+    #score7,
+    #score8,
+    #subject1,
+    #subject2,
+    #subject3,
+    #subject4,
+    #subject5,
+    #subject6,
+    #subject7,
+    #subject8 {
+        padding: 3px 0px 3px 5px;
+        text-align: left;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #b2dbee;
+        border: 1px solid rgb(0, 44, 94);
+    }
+
+    #verify {
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        background-color: greenyellow;
+        border: greenyellow;
+    }
+
+    #messageTxt {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .txt1 h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .txt2 p,
+    .txt3 p {
+        text-align: left;
+        margin: auto;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 18px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row3 {
+        width: 60%;
+    }
+
+    .sub1,
+    .sub2,
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6,
+    .sub7,
+    .sub8 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #firstName,
+    #middleName,
+    #lastName,
+    #phoneNumber,
+    #email,
+    #homeAddress,
+    #gender,
+    #country,
+    #dob,
+    #score1,
+    #score2,
+    #score3,
+    #score4,
+    #score5,
+    #score6,
+    #score7,
+    #score8,
+    #subject1,
+    #subject2,
+    #subject3,
+    #subject4,
+    #subject5,
+    #subject6,
+    #subject7,
+    #subject8 {
+        padding: 3px 0px 3px 5px;
+        text-align: left;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #b2dbee;
+        border: 1px solid rgb(0, 44, 94);
+    }
+
+    #verify {
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        background-color: greenyellow;
+        border: greenyellow;
+    }
+
+    #messageTxt {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .txt1 h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .txt2 p,
+    .txt3 p {
+        text-align: left;
+        margin: auto;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 18px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row3 {
+        width: 60%;
+    }
+
+    .sub1,
+    .sub2,
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6,
+    .sub7,
+    .sub8 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #firstName,
+    #middleName,
+    #lastName,
+    #phoneNumber,
+    #email,
+    #homeAddress,
+    #gender,
+    #country,
+    #dob,
+    #score1,
+    #score2,
+    #score3,
+    #score4,
+    #score5,
+    #score6,
+    #score7,
+    #score8,
+    #subject1,
+    #subject2,
+    #subject3,
+    #subject4,
+    #subject5,
+    #subject6,
+    #subject7,
+    #subject8 {
+        padding: 3px 0px 3px 5px;
+        text-align: left;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #b2dbee;
+        border: 1px solid rgb(0, 44, 94);
+    }
+
+    #verify {
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        background-color: greenyellow;
+        border: greenyellow;
+    }
+
+    #messageTxt {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+}

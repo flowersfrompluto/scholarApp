@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div class="row0">
+        <div class="welcome">
+            <h1>BESTWAY SCHOLARSHIP</h1>
+        </div>
+        <br>
+        <div class="head">
+            <div class="txt1">
+                <h3>SCHOLARSHIP APPLICATION FORM</h3>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <br>
+        <br>
+        
+        <div class="txt2">
+            <br>
+            <p><span style="font-size: 25px;">BIODATA FORM</span> <br><span style="font-size: 10px; color: royalblue;"> KINDLY FILL IN THE APPLICATION FORM WITH CORRECT INFORMATION</span></p>
+        </div>
+        <br><br>
+        <div class="row1">
+            <div class="first">
+                <label id="first">First Name</label><br>
+                <input type="text" id="firstName" placeholder=" First Name" maxlength="25"></input><br>
+                <label id="firstError"></label>
+            </div>
+
+            <div class="last">
+                <label id="last">Last Name</label><br>
+                <input type="text" id="lastName" placeholder=" Last Name" maxlength="25"></input><br>
+                <label id="lastError"></label>
+            </div>
+            
+            <div class="middle">
+                <label id="middle">Middle Name</label><br>
+                <input type="text" id="middleName" placeholder=" Middle Name" maxlength="25"></input><br>
+                <label id="middleError"></label>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row2">
+
+            <div class="gender">
+                <label id="genderTxt">Gender</label><br>
+                <select id="gender">
+                    <option value="">Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+                <label id="genderError"></label>
+            </div>
+            
+            <div class="nationality">
+                <label id="nationalityTxt">Select Nationality</label><br>
+                    <select id="country">
+                        <option value="">Select your Country</option>
+                        <option value="southAmerica">Argentina</option>
+                        <option value="northAmerica">Bahamas</option>
+                        <option value="northAmerica">Barbados</option>
+                        <option value="southAmerica">Bolivia</option>
+                        <option value="southAmerica">Brazil</option>
+                        <option value="northAmerica">Canada</option>
+                        <option value="southAmerica">Chile</option>
+                        <option value="northAmerica">Costa Rica</option>
+                        <option value="southAmerica">Ecuador</option>
+                        <option value="africa">Egypt</option>
+                        <option value="restOfTheWorld">Finland</option>
+                        <option value="restOfTheWorld">France</option>
+                        <option value="restOfTheWorld">Germany</option>
+                        <option value="africa">Ghana</option>
+                        <option value="asia">India</option>
+                        <option value="restOfTheWorld">Italy</option>
+                        <option value="asia">Israel</option>
+                        <option value="northAmerica">Jamaica</option>
+                        <option value="asia">Malaysia</option>
+                        <option value="africa">Mali</option>
+                        <option value="northAmerica">Mexico</option>
+                        <option value="africa">Morocco</option>
+                        <option value="africa">Nigeria</option>
+                        <option value="restOfTheWorld">Norway</option>
+                        <option value="northAmerica">Panama</option>
+                        <option value="southAmerica">Peru</option>
+                        <option value="restOfTheWorld">Portugal</option>
+                        <option value="asia">Qatar</option>
+                        <option value="asia">Russia</option>
+                        <option value="restOfTheWorld">Spain</option>
+                        <option value="africa">South Africa</option>
+                        <option value="asia">South Korea</option>
+                        <option value="africa">Sudan</option>
+                        <option value="africa">Tanzania</option>
+                        <option value="asia">Thaiwan</option>
+                        <option value="asia">Turkey</option>
+                        <option value="restOfTheWorld">Ukraine</option>
+                        <option value="northAmerica">United States of America</option>
+                        <option value="southAmerica">Uruguay</option>
+                        <option value="southAmerica">Venezuela</option>
+                    </select><br>
+                    <label id="nationalityError"></label>
+            </div>
+
+
+            <div class="dob">
+                <label id="dobTxt">Date of Birth</label><br>
+                <input type="date" id="dob" placeholder="Date of Birth"></input><br>
+                <label id="ageDisplay" oninput="proceed()"></label>
+                <label id="dobError"></label>
+            </div>
+
+            <div class="phone">
+                <label id="phoneTxt">Phone Number</label><br>
+                <input type="tel" id="phoneNumber" placeholder="Phone Number"></input><br>
+                <label id="phoneError"></label>
+            </div>
+
+            <div class="email">
+                <label id="emailTxt">Email Address</label><br>
+                <input type="email" id="email" placeholder="mail@example.com"></input><br>
+                <label id="emailError"></label>
+            </div>
+
+            <div class="address">
+                <label id="addressTxt">Home Address</label><br>
+                <input type="text" id="homeAddress" placeholder="Home Address"></input><br>
+                <label id="addressError"></label>
+            </div>
+
+        </div>
+        
+        <br><br><br>
+        
+        <div class="txt3">
+            <p><span style="font-size: 25px;" >ACADEMIC QUALIFICATION</span> <br> <span style="font-size: 10px; color: royalblue;" >FILL IN THE FORM WITH THE APPRIOPRIATE SUBJECTS AND SCORES EARNED</span></p>
+            <br>
+        </div>
+
+        <div class="row3">    
+            <div class="subject">  
+
+                <div class="sub1">
+                    <div class="opt1">
+                        <br>
+                        <label id="subjectTxt">Complusory</label><br>
+                        <select id="subject1" disabled>
+                            <option value="1">English Language</option>
+                            <option value="">Accounting</option>
+                            <option value="">Agricultural Science</option>
+                            <option value="">Biology</option>
+                            <option value="">Chemistry</option>
+                            <option value="">Christian Religious Studies</option>
+                            <option value="">Commerce</option>
+                            <option value="">Computer Studies</option>
+                            <option value="">Data Processing</option>
+                            <option value="">Economics</option>
+                            <option value="">Food and Nutrition</option>
+                            <option value="">French</option>
+                            <option value="">Further Mathematics</option>
+                            <option value="">Geography</option>
+                            <option value="">Government</option>
+                            <option value="">History</option>
+                            <option value="">Islamic Religious Studies</option>
+                            <option value="">Marketing</option>
+                            <option value="">Physics</option>
+                            <option value="">Visual Arts</option>
+                        </select><br>
+                        <label id="subject1Error"></label><br><br>
+                    </div>
+                    <div class="inp1">
+                        <br>
+                        <label id="empty"></label><br>
+                        <input type="number" id="score1" placeholder="score"></input><br>
+                        <label id="score1Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub2">
+                    <div class="opt2">
+                        <label id="subjectTxt">Complusory</label><br>
+                        <select id="subject2" disabled>
+                            <option value="1">Mathematics</option>
+                            <option value="">Accounting</option>
+                            <option value="">Agricultural Science</option>
+                            <option value="">Biology</option>
+                            <option value="">Chemistry</option>
+                            <option value="">Christian Religious Studies</option>
+                            <option value="">Commerce</option>
+                            <option value="">Computer Studies</option>
+                            <option value="">Data Processing</option>
+                            <option value="">Economics</option>
+                            <option value="">Food and Nutrition</option>
+                            <option value="">French</option>
+                            <option value="">Further Mathematics</option>
+                            <option value="">Geography</option>
+                            <option value="">Government</option>
+                            <option value="">History</option>
+                            <option value="">Islamic Religious Studies</option>
+                            <option value="">Marketing</option>
+                            <option value="">Physics</option>
+                            <option value="">Visual Arts</option>
+                        </select><br>
+                        <label id="subject2Error"></label><br><br>
+                    </div>
+                    <div class="inp2">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score2" placeholder="score"></input><br>
+                        <label id="score2Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub3">
+                    <div class="opt3">
+                        <label id="subjectTxt">Select a Subject</label><br>
+                        <select id="subject3">
+                            <option value="">Select subject</option>
+                            <option value="1">Accounting</option>
+                            <option value="2">Agricultural Science</option>
+                            <option value="3">Biology</option>
+                            <option value="4">Chemistry</option>
+                            <option value="5">Christian Religious Studies</option>
+                            <option value="6">Commerce</option>
+                            <option value="7">Computer Studies</option>
+                            <option value="8">Data Processing</option>
+                            <option value="9">Economics</option>
+                            <option value="10">Food and Nutrition</option>
+                            <option value="11">French</option>
+                            <option value="12">Further Mathematics</option>
+                            <option value="13">Geography</option>
+                            <option value="14">Government</option>
+                            <option value="15">History</option>
+                            <option value="16">Islamic Religious Studies</option>
+                            <option value="17">Marketing</option>
+                            <option value="18">Physics</option>
+                            <option value="19">Visual Arts</option>
+                        </select><br>
+                        <label id="subject3Error"></label><br><br>
+                    </div>
+                    <div class="inp3">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score3" placeholder="score"></input><br>
+                        <label id="score3Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub4">
+                    <div class="opt4">
+                        <label id="subjectTxt">Select a Subject</label><br>
+                        <select id="subject4">
+                            <option value="">Select subject</option>
+                            <option value="1">Accounting</option>
+                            <option value="2">Agricultural Science</option>
+                            <option value="3">Biology</option>
+                            <option value="4">Chemistry</option>
+                            <option value="5">Christian Religious Studies</option>
+                            <option value="6">Commerce</option>
+                            <option value="7">Computer Studies</option>
+                            <option value="8">Data Processing</option>
+                            <option value="9">Economics</option>
+                            <option value="10">Food and Nutrition</option>
+                            <option value="11">French</option>
+                            <option value="12">Further Mathematics</option>
+                            <option value="13">Geography</option>
+                            <option value="14">Government</option>
+                            <option value="15">History</option>
+                            <option value="16">Islamic Religious Studies</option>
+                            <option value="17">Marketing</option>
+                            <option value="18">Physics</option>
+                            <option value="19">Visual Arts</option>
+                        </select><br>
+                        <label id="subject4Error"></label><br><br>
+                    </div>
+                    <div class="inp4">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score4" placeholder="score"></input><br>
+                        <label id="score4Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub5">
+                    <div class="opt5">
+                        <label id="subjectTxt">Select a Subject</label><br>
+                        <select id="subject5">
+                            <option value="">Select subject</option>
+                            <option value="1">Accounting</option>
+                            <option value="2">Agricultural Science</option>
+                            <option value="3">Biology</option>
+                            <option value="4">Chemistry</option>
+                            <option value="5">Christian Religious Studies</option>
+                            <option value="6">Commerce</option>
+                            <option value="7">Computer Studies</option>
+                            <option value="8">Data Processing</option>
+                            <option value="9">Economics</option>
+                            <option value="10">Food and Nutrition</option>
+                            <option value="11">French</option>
+                            <option value="12">Further Mathematics</option>
+                            <option value="13">Geography</option>
+                            <option value="14">Government</option>
+                            <option value="15">History</option>
+                            <option value="16">Islamic Religious Studies</option>
+                            <option value="17">Marketing</option>
+                            <option value="18">Physics</option>
+                            <option value="19">Visual Arts</option>
+                        </select><br>
+                        <label id="subject5Error"></label><br><br>
+                    </div>
+                    <div class="inp5">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score5" placeholder="score"></input><br>
+                        <label id="score5Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub6">
+                    <div class="opt6">
+                        <label id="subjectTxt">Select a Subject</label><br>
+                        <select id="subject6">
+                            <option value="">Select subject</option>
+                            <option value="1">Accounting</option>
+                            <option value="2">Agricultural Science</option>
+                            <option value="3">Biology</option>
+                            <option value="4">Chemistry</option>
+                            <option value="5">Christian Religious Studies</option>
+                            <option value="6">Commerce</option>
+                            <option value="7">Computer Studies</option>
+                            <option value="8">Data Processing</option>
+                            <option value="9">Economics</option>
+                            <option value="10">Food and Nutrition</option>
+                            <option value="11">French</option>
+                            <option value="12">Further Mathematics</option>
+                            <option value="13">Geography</option>
+                            <option value="14">Government</option>
+                            <option value="15">History</option>
+                            <option value="16">Islamic Religious Studies</option>
+                            <option value="17">Marketing</option>
+                            <option value="18">Physics</option>
+                            <option value="19">Visual Arts</option>
+                        </select><br>
+                        <label id="subject6Error"></label><br><br>
+                    </div>
+                    <div class="inp6">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score6" placeholder="score"></input><br>
+                        <label id="score6Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub7">
+                    <div class="opt7">
+                        <label id="subjectTxt">Select a Subject</label><br>
+                        <select id="subject7">
+                            <option value="">Select subject</option>
+                            <option value="1">Accounting</option>
+                            <option value="2">Agricultural Science</option>
+                            <option value="3">Biology</option>
+                            <option value="4">Chemistry</option>
+                            <option value="5">Christian Religious Studies</option>
+                            <option value="6">Commerce</option>
+                            <option value="7">Computer Studies</option>
+                            <option value="8">Data Processing</option>
+                            <option value="9">Economics</option>
+                            <option value="10">Food and Nutrition</option>
+                            <option value="11">French</option>
+                            <option value="12">Further Mathematics</option>
+                            <option value="13">Geography</option>
+                            <option value="14">Government</option>
+                            <option value="15">History</option>
+                            <option value="16">Islamic Religious Studies</option>
+                            <option value="17">Marketing</option>
+                            <option value="18">Physics</option>
+                            <option value="19">Visual Arts</option>
+                        </select><br>
+                        <label id="subject7Error"></label><br><br>
+                    </div>
+                    <div class="inp7">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score7" placeholder="score"></input><br>
+                        <label id="score7Error"></label><br><br>
+                    </div>
+                </div>
+
+                <div class="sub8">
+                    <div class="opt8">
+                        <label id="subjectTxt">Select a Subject</label><br>
+                        <select id="subject8">
+                            <option value="">Select subject</option>
+                            <option value="1">Accounting</option>
+                            <option value="2">Agricultural Science</option>
+                            <option value="3">Biology</option>
+                            <option value="4">Chemistry</option>
+                            <option value="5">Christian Religious Studies</option>
+                            <option value="6">Commerce</option>
+                            <option value="7">Computer Studies</option>
+                            <option value="8">Data Processing</option>
+                            <option value="9">Economics</option>
+                            <option value="10">Food and Nutrition</option>
+                            <option value="11">French</option>
+                            <option value="12">Further Mathematics</option>
+                            <option value="13">Geography</option>
+                            <option value="14">Government</option>
+                            <option value="15">History</option>
+                            <option value="16">Islamic Religious Studies</option>
+                            <option value="17">Marketing</option>
+                            <option value="18">Physics</option>
+                            <option value="19">Visual Arts</option>
+                        </select><br>
+                        <label id="subject8Error"></label><br><br>
+                    </div>
+                    <div class="inp8">
+                        <label id="empty"></label><br>
+                        <input type="number" id="score8" placeholder="score"></input><br>
+                        <label id="score8Error"></label><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <input type="checkbox" id="termsConditions" value="0"> I have read all the Terms and Conditions and I accept all information given are true</input><br>
+        <label id="termsError"></label>
+        
+        <br><br>
+    
+        <button id="btn" type="submit">Submit Application</button>
+        
+        <br><br>
+
+
+        <label id="messageTxt"></label>
+
+        <div class="container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+
+    </div>
+    <footer>
+        <div class="tc">
+            <p>
+                * If you are a beneficiary of Ikigai Scholarship or any other scholarship, you are ineligible for this scholarship.
+             </p>
+             <p>
+                 * All scholarships admissions are given based on merit, Ikigai Scholarship board would never ask you for money.
+             </p>
+             <p>
+                 * You would be required if given a scholarship from Ikigai, to join the Ikigai scholarship
+                 fellows support group in your country and you would be required to attend quarterly meetings in your country's support group.
+             </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

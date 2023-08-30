@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <title>Chart</title>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+    <script>
+    
+        function chart(){
+            let myChart = document.getElementById("myChart").getContext("2d");
+
+        let scoreChart = new Chart(myChart, {
+            type: "bar",
+            data: {
+                labels: ["age", "country", "grade"],
+                datasets:[{
+                    label:"score average",
+                    data:[
+                        agePoint,
+                        countryPoint,
+                        pointAward
+                    ]
+                }]
+            },
+            options:{}
+        
+        })
+        };
+
+    </script>
+</body>
+</html>
